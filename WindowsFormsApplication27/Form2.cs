@@ -32,5 +32,12 @@ namespace WindowsFormsApplication27
             newMDIChild.MdiParent = this;
             newMDIChild.Show();
         }
+
+        private void ruteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHalte newMDIChild = new FormHalte();
+            newMDIChild.MdiParent = this;
+            newMDIChild.Show();
+        }
     }
 }

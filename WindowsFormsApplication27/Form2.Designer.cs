@@ -71,6 +71,7 @@
             this.ruteToolStripMenuItem.Name = "ruteToolStripMenuItem";
             this.ruteToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.ruteToolStripMenuItem.Text = "Halte";
+            this.ruteToolStripMenuItem.Click += new System.EventHandler(this.ruteToolStripMenuItem_Click);
             // 
             // jadwalToolStripMenuItem
             // 
