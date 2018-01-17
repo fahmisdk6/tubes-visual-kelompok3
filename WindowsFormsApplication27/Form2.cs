@@ -16,5 +16,21 @@ namespace WindowsFormsApplication27
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            //open home
+            FormHome newMDIChild = new FormHome();
+            newMDIChild.MdiParent = this;
+            newMDIChild.Show();
+
+        }
+
+        private void halterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormBus newMDIChild = new FormBus();
+            newMDIChild.MdiParent = this;
+            newMDIChild.Show();
+        }
     }
 }
