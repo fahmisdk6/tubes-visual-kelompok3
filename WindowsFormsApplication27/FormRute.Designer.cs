@@ -177,6 +177,7 @@
             this.Controls.Add(this.button1);
             this.Name = "FormRute";
             this.Text = "Form5";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormRute_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
