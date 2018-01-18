@@ -47,7 +47,25 @@ namespace WindowsFormsApplication27
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string query = "INSERT INTO rute (id, nama_rute, halte_asal, halte_tujuan) VALUES('" + textBox1.Text.ToString() + "', '" + textBox2.Text.ToString() + "'" +
+                    ", '" + comboBox1.GetItemText(this.comboBox1.SelectedItem) + "' , '" +comboBox1.GetItemText(this.comboBox1.SelectedItem)+ "' )";
+            //create command and assign the query and connection from the constructor
+            MySqlCommand cmd = new MySqlCommand(query, conn);
 
+            //Execute command
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data berhasil ditambahkan");
+                textBox1.Text = "";
+                textBox2.Text = "";
+                comboBox1.SelectedItem = 0;
+                initData();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Gagal : " + ex.Message);
+            }
         }
     }
 }

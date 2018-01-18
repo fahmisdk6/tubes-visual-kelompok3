@@ -78,12 +78,14 @@
             this.jadwalToolStripMenuItem.Name = "jadwalToolStripMenuItem";
             this.jadwalToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.jadwalToolStripMenuItem.Text = "Rute";
+            this.jadwalToolStripMenuItem.Click += new System.EventHandler(this.jadwalToolStripMenuItem_Click);
             // 
             // tiketToolStripMenuItem
             // 
             this.tiketToolStripMenuItem.Name = "tiketToolStripMenuItem";
             this.tiketToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.tiketToolStripMenuItem.Text = "Jadwal";
+            this.tiketToolStripMenuItem.Click += new System.EventHandler(this.tiketToolStripMenuItem_Click);
             // 
             // tiketToolStripMenuItem1
             // 

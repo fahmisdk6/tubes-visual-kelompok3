@@ -39,5 +39,18 @@ namespace WindowsFormsApplication27
             newMDIChild.MdiParent = this;
             newMDIChild.Show();
         }
+
+        private void jadwalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Hahah");
+            FormRute newMDIChild = new FormRute();
+            newMDIChild.MdiParent = this;
+            newMDIChild.Show();
+        }
+
+        private void tiketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hahah");
+        }
     }
 }
