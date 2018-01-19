@@ -42,7 +42,7 @@ namespace WindowsFormsApplication27
 
         private void jadwalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Hahah");
+            
             FormRute newMDIChild = new FormRute();
             newMDIChild.MdiParent = this;
             newMDIChild.Show();
@@ -50,7 +50,9 @@ namespace WindowsFormsApplication27
 
         private void tiketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hahah");
+            FormJadwal newMDIChild = new FormJadwal();
+            newMDIChild.MdiParent = this;
+            newMDIChild.Show();
         }
     }
 }
