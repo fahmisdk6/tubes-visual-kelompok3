@@ -19,11 +19,11 @@ namespace WindowsFormsApplication27
         public Form1()
         {
             InitializeComponent();
+            conn.Open();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            conn.Open();
             string username = textBox1.Text;
             string password = textBox2.Text;
             MySqlCommand cmd = new MySqlCommand("SELECT *FROM user where username = '" + username + "' and password = '"+ password + "'", conn);
@@ -31,11 +31,23 @@ namespace WindowsFormsApplication27
             bool found = false;
             while (read.Read())
             {
+                string role = read.GetString("role");
                 string message = "Login berhasil:\n";
-                var home = new Form2();
-                home.Show();
+                if(role == "admin")
+                {
+                    var home = new Form2();
+                    home.Show();
+                }
+                else
+                {
+                    var jadwal = new FormLihatJadwal(read.GetInt32("user_id"));
+                    jadwal.Show();
+                }
+                read.Close();
                 return;
             }
+
+            read.Close();
             MessageBox.Show("Login Tidak Behasil mohon di cek username dan password");
         }
 

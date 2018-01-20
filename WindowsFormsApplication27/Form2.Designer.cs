@@ -58,6 +58,7 @@
             this.busToolStripMenuItem.Name = "busToolStripMenuItem";
             this.busToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.busToolStripMenuItem.Text = "Beranda";
+            this.busToolStripMenuItem.Click += new System.EventHandler(this.busToolStripMenuItem_Click);
             // 
             // halterToolStripMenuItem
             // 

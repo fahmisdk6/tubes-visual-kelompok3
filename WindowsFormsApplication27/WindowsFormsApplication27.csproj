@@ -78,6 +78,12 @@
     <Compile Include="FormJadwal.Designer.cs">
       <DependentUpon>FormJadwal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLihatJadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLihatJadwal.Designer.cs">
+      <DependentUpon>FormLihatJadwal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormJadwal.resx">
       <DependentUpon>FormJadwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLihatJadwal.resx">
+      <DependentUpon>FormLihatJadwal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>

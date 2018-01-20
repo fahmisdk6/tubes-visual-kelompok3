@@ -54,5 +54,13 @@ namespace WindowsFormsApplication27
             newMDIChild.MdiParent = this;
             newMDIChild.Show();
         }
+
+        private void busToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FormHome newMDIChild = new FormHome();
+            newMDIChild.MdiParent = this;
+            newMDIChild.Show();
+        }
     }
 }
