@@ -30,8 +30,8 @@ namespace WindowsFormsApplication27
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO user (username, password, firstname, lastname) VALUES('" + textBox1.Text.ToString() + "', '" + textBox2.Text.ToString() + "'" +
-                ", '" + textBox3.Text.ToString() + "','" + textBox4.Text.ToString() +"')";
+            string query = "INSERT INTO user (username, password, firstname, lastname, role) VALUES('" + textBox1.Text.ToString() + "', '" + textBox2.Text.ToString() + "'" +
+                ", '" + textBox3.Text.ToString() + "','" + textBox4.Text.ToString() +"','user')";
             //create command and assign the query and connection from the constructor
             MySqlCommand cmd = new MySqlCommand(query, conn);
 
