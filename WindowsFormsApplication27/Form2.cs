@@ -50,9 +50,7 @@ namespace WindowsFormsApplication27
 
         private void tiketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormJadwal newMDIChild = new FormJadwal();
-            newMDIChild.MdiParent = this;
-            newMDIChild.Show();
+            
         }
     }
 }
